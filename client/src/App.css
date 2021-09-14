@@ -1,0 +1,83 @@
+body{
+  margin: 10px;
+}
+
+.navbar{
+  height: 20px;
+  background-color: rgb(136, 240, 145);
+  display: flex;
+  padding: 20px;
+}
+.navbar li{
+  list-style-type: none;
+  padding: 10px;
+  color: white;
+  font-size: 20px;
+ 
+}
+.products{
+  background-image: url("./Images/veges-fruits.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  height: 90vh;
+  opacity: 80%;
+}
+.prod{
+  width: 40%;
+  background-color: rgb(247, 200, 101);
+  margin-left: 25vw;
+  text-align: center;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 5px rgb(240, 214, 158);
+    
+}
+.prod p{
+  color: rgb(252, 250, 228);
+    font-size: 20px;
+    
+}
+h1{
+  text-align: center;
+  color: rgb(253, 244, 232);
+  font-size: 50px;
+  text-shadow: 2px 2px  black;
+  
+}
+.fruits{
+  background-image: url("./Images/fruits.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  height: 90vh;
+  opacity: 80%;
+}
+.fruit{
+  width: 40%;
+  background-color: rgb(247, 200, 101);
+  margin-left: 25vw;
+  text-align: center;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 5px rgb(240, 214, 158);
+    
+}
+.vegetables{
+  background-image: url("./Images//vegetables.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  height: 90vh;
+  opacity: 80%;
+}
+.veges{
+  width: 40%;
+  background-color: rgb(247, 200, 101);
+  margin-left: 25vw;
+  text-align: center;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 5px rgb(240, 214, 158);
+    
+}
