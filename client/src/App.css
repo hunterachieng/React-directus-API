@@ -16,7 +16,7 @@ body{
  
 }
 .products{
-  background-image: url("./Images/veges-fruits.jpg");
+  background-image: url("http://127.0.0.1:8080/product/assets/qofvkpd1tusw0sws");
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: center;
@@ -46,7 +46,7 @@ h1{
   
 }
 .fruits{
-  background-image: url("./Images/fruits.jpg");
+  background-image: url("http://127.0.0.1:8080/product/assets/10qb5f7lwkrkgoww");
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: center;
@@ -64,7 +64,7 @@ h1{
     
 }
 .vegetables{
-  background-image: url("./Images//vegetables.jpg");
+  background-image: url("http://127.0.0.1:8080/product/assets/77os16nq8m0w8cc8");
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: center;

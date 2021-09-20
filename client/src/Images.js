@@ -1,14 +1,13 @@
-import React ,{useState, useEffect} from 'react';
-import Images from './Images';
+import React ,{useState, useEffect} from 'react'
 
 
 
 
-export default function Fruits(){
+export default function Images(){
     const [products,setProducts] = useState([]);
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(null);
-    const url = "http://127.0.0.1:8080/product/items/product?filter[category]=Fruits"
+    const url = "http://127.0.0.1:8080/product/items/product?fields=image.data.image"
 
     useEffect(()=>{
         fetch(url)
@@ -36,12 +35,12 @@ export default function Fruits(){
     else{
       
         return(
-     <div className="fruits">
-         <h1>Fruits</h1>
-              <div className="fruit">
-               {products &&  products.map(item =><p key={item.id}>{item.items}</p>)}  
-               <Images/>
-               
+     <div className="images">
+        
+              <div >
+               {products &&  products.map(item =><img src={item.url} alt="mangoes"/> )}  
+                
+                 
                 </div>
                  </div>
  
