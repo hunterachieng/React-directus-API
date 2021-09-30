@@ -5,15 +5,15 @@ networks:
 
 services:
   client:
-    container_name: client
+    image: node:14.17.3-buster    
     build:
-      context: ./client
+      context: "."
       dockerfile: Dockerfile
     volumes:
-      - './client'
-      - '/client/node_modules'
+      - './client:/app'
+      - '/app/node_modules'
     ports:
-      - 3001:3000
+      - 3003:3000
     
      
   mysql:

@@ -1,7 +1,25 @@
-FROM node:latest
+# pull official base image
+FROM node:14.17.3-buster
+
+# set working directory
 WORKDIR /app
+
+# add `/app/node_modules/.bin` to $PATH
 ENV PATH /app/node_modules/.bin:$PATH
+
+# install app dependencies
 COPY package.json ./
-# RUN npm install --silent
-RUN npm install -g npm@7.23.0 --silent
+COPY package-lock.json ./
+
+RUN npm install --silent
+
+
+# add app
+#copying all files into WORKDIR
+COPY . ./
+
+# Make port 3000 available to the world outside this container
+EXPOSE 3000
+
+# start app
 CMD ["npm", "start"]
