@@ -1,5 +1,5 @@
 import React ,{useState, useEffect} from 'react';
-import Images from './Images';
+
 
 
 
@@ -40,7 +40,7 @@ export default function Fruits(){
          <h1>Fruits</h1>
               <div className="fruit">
                {products &&  products.map(item =><p key={item.id}>{item.items}</p>)}  
-               <Images/>
+             
                
                 </div>
                  </div>
